@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_profile"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackground"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.connect.rh.presenter.common.profile.ProfileActivity"
+    tools:showIn="@layout/activity_profile">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginBottom="@dimen/forty_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/profile_holder_layout"
+                android:layout_width="match_parent"
+                android:background="@drawable/profile_back"
+                android:layout_height="200dp">
+                <RelativeLayout
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="@dimen/one_fifty_dp"
+                        android:layout_height="@dimen/one_fifty_dp"
+                        android:src="@drawable/profile1"
+                        app:civ_border_color="#EEEEEE"
+                        app:civ_border_width="4dp"
+                        app:civ_shadow="true"
+                        app:civ_shadow_radius="10"
+                        app:civ_shadow_color="#8BC34A"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/profile_margin_layout"
+                android:background="@color/colorAccent"
+                android:layout_below="@+id/profile_holder_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/thirty_dp">
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/profile_details_layout"
+                android:background="@drawable/square_shape_bg"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:layout_marginRight="@dimen/ten_dp"
+                android:layout_marginLeft="@dimen/ten_dp"
+                android:layout_below="@+id/profile_margin_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/profile_username_text"
+                    android:text="Tedd Berry"
+                    android:textSize="@dimen/twenty_four_sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/thirty_dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_below="@+id/profile_username_text"
+                    android:id="@+id/profile_pos_text"
+                    android:text="Lead Director"
+                    android:textSize="@dimen/seventeen_sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:id="@+id/profile_devider_layout"
+                    android:layout_below="@+id/profile_pos_text"
+                    android:layout_margin="@dimen/thirty_dp"
+                        android:background="@color/colorDevider"
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/one_dp"></View>
+                <RelativeLayout
+                    android:id="@+id/profile_content_layout"
+                    android:layout_below="@+id/profile_devider_layout"
+                    android:layout_marginLeft="@dimen/sixty_five_dp"
+                    android:layout_marginRight="@dimen/forty_dp"
+                    android:layout_marginBottom="@dimen/forty_dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:id="@+id/profile_seat_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/profile_seat_img"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_seat"
+                            android:layout_width="@dimen/twenty_five_dp"
+                            android:layout_height="@dimen/twenty_five_dp" />
+                        <TextView
+                            android:layout_toRightOf="@+id/profile_seat_img"
+                            android:id="@+id/profile_seat_text"
+                            android:text="Somewhere, Neverland"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="@dimen/ten_dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_below="@id/profile_seat_layout"
+                        android:id="@+id/profile_mob_layout"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/profile_mob_img"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_mob"
+                            android:layout_width="@dimen/twenty_five_dp"
+                            android:layout_height="@dimen/twenty_five_dp" />
+                        <TextView
+                            android:layout_toRightOf="@+id/profile_mob_img"
+                            android:id="@+id/profile_mob_text"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/colorWebLink"
+                            android:autoLink="phone"
+                            android:layout_marginLeft="@dimen/ten_dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_below="@id/profile_mob_layout"
+                        android:id="@+id/profile_phone_layout"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/profile_phone_img"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_phone"
+                            android:layout_width="@dimen/twenty_five_dp"
+                            android:layout_height="@dimen/twenty_five_dp" />
+                        <TextView
+                            android:layout_toRightOf="@+id/profile_phone_img"
+                            android:id="@+id/profile_phone_text"
+                            android:layout_centerVertical="true"
+                            android:autoLink="phone"
+                            android:textColor="@color/colorWebLink"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="@dimen/ten_dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_below="@id/profile_phone_layout"
+                        android:id="@+id/profile_dept_layout"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/profile_dept_img"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_grad"
+                            android:layout_width="@dimen/twenty_five_dp"
+                            android:layout_height="@dimen/twenty_five_dp" />
+                        <TextView
+                            android:layout_toRightOf="@+id/profile_dept_img"
+                            android:id="@+id/profile_dept_text"
+                            android:text="Master Designer"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="@dimen/ten_dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_below="@+id/profile_details_layout"
+                android:visibility="invisible"
+                android:background="@color/colorAccent"
+                android:layout_width="@dimen/forty_dp"
+                android:layout_height="@dimen/forty_dp">
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+{
+  "staffNumber":"1001",
+  "firstName_fa":"حامد",
+  "middleName_fa":"",
+  "lastName_fa":"موسوی",
+  "firstName_en":"hamed",
+  "middleName_en":"",
+  "lastName_en":"moosavi",
+  "seatLocation":"THR/YSD/GF/W221",
+  "phoneNumber":"0215555889",
+  "mobileNumber":"0912758842",
+  "fax":"02155849632",
+  "user":
+  {
+    "id": "1001"
+  },
+  "icon":
+  {
+    "name": "1_1001.jpg",
+    "iconURL":"http://mito.connect.com:8080/staff/user=?"
+  },
+  "department":
+  {
+    "id": "2",
+    "name_fa": "منابع انسانی",
+    "name_en": "Human Resource"
+  },
+  "position":
+  {
+    "id": "40",
+    "name_fa":"سرپرست",
+    "name_en":"supervisor"
+  }
+}

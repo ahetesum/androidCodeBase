@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".presenter.common.settings.SettingsActivity"
+    tools:showIn="@layout/activity_settings">
+
+    <RelativeLayout
+        android:id="@+id/settings_language_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/fifty_dp"
+        >
+
+        <TextView
+            android:id="@+id/settings_language_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorPrimaryText"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:text="@string/language_settings"
+            android:textSize="@dimen/fifteen_sp" />
+
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/one_dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:layout_marginRight="@dimen/five_dp"
+            android:background="@color/colorPrimaryText"></View>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/settings_english_layout"
+        android:layout_below="@+id/settings_language_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/colorSecondaryText"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:text="@string/english_text"
+            android:textSize="@dimen/fifteen_sp" />
+
+        <CheckBox
+            android:id="@+id/settings_english_chk"
+            android:layout_width="@dimen/forty_dp"
+            android:layout_height="@dimen/forty_dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/ten_dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/one_dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:layout_marginRight="@dimen/five_dp"
+            android:background="@color/colorDevider"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settings_farshi_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:layout_below="@id/settings_english_layout"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/settings_farshi_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorSecondaryText"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:text="@string/farshi_text"
+            android:textSize="@dimen/fifteen_sp" />
+
+        <CheckBox
+            android:id="@+id/settings_farshi_chk"
+            android:layout_width="@dimen/forty_dp"
+            android:layout_height="@dimen/forty_dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/ten_dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/one_dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:layout_marginRight="@dimen/five_dp"
+            android:background="@color/colorDevider"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settings_other_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:layout_below="@id/settings_farshi_layout"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:text="Other Settings"
+            android:textSize="@dimen/fifteen_sp" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/one_dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:layout_marginRight="@dimen/five_dp"
+            android:background="@color/colorPrimaryText"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settings_wifisync_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:layout_below="@id/settings_other_layout"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:textColor="@color/colorSecondaryText"
+            android:text="Wifi"
+            android:textSize="@dimen/fifteen_sp" />
+
+        <CheckBox
+            android:id="@+id/settings_wifisync_img"
+            android:layout_width="@dimen/forty_dp"
+            android:layout_height="@dimen/forty_dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/ten_dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/one_dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:layout_marginRight="@dimen/five_dp"
+            android:background="@color/colorDevider"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settings_wifimedia_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:layout_below="@id/settings_wifisync_layout"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorSecondaryText"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:text="Media Wifi "
+            android:textSize="@dimen/fifteen_sp" />
+
+        <CheckBox
+            android:id="@+id/settings_wifimedia_img"
+            android:layout_width="@dimen/forty_dp"
+            android:layout_height="@dimen/forty_dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/ten_dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/one_dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:layout_marginRight="@dimen/five_dp"
+            android:background="@color/colorDevider"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settings_wificache_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:layout_below="@id/settings_wifimedia_layout"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorSecondaryText"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:text="Cache Images Locally"
+            android:textSize="@dimen/fifteen_sp" />
+
+        <CheckBox
+            android:id="@+id/settings_wificache_img"
+            android:layout_width="@dimen/forty_dp"
+            android:layout_height="@dimen/forty_dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/ten_dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/one_dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:layout_marginRight="@dimen/five_dp"
+            android:background="@color/colorDevider"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:layout_below="@id/settings_wificache_layout"
+        android:id="@+id/settings_emergency_layout"
+        android:clickable="true">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_contact"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorSecondaryText"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/forty_dp"
+            android:text="Add Emergency Contacts"
+            android:textSize="@dimen/fifteen_sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/one_dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:layout_marginRight="@dimen/five_dp"
+            android:background="@color/colorDevider"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:layout_below="@id/settings_emergency_layout"
+        android:id="@+id/settings_logout_layout"
+        android:clickable="true">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_logout"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorSecondaryText"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/forty_dp"
+            android:text="Log Out"
+            android:textSize="@dimen/fifteen_sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/one_dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:layout_marginRight="@dimen/five_dp"
+            android:background="@color/colorDevider"></View>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+{
+  "userId": "1001",
+  "loginName": "systemadmin",
+  "email": "systemadmin@mitoconnect.com",
+  "defaultLanguage": "en",
+  "accessToken":
+  {
+    "access_token": "458552f803af68582635a323ad1e40ce",
+    "expiredTime": "2017-03-25 17:50:55"
+  },
+  "createTime": "2017-03-25 17:50:55",
+  "updateTime": "2017-03-25 17:50:55"
+}

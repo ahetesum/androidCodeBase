@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_account_reset_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.connect.rh.presenter.common.account.forgot.ForgotPasswordActivity"
+    tools:showIn="@layout/activity_account_reset">
+    <RelativeLayout
+        android:background="@drawable/square_shape_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:padding="@dimen/ten_dp"
+            android:id="@+id/reset_acc_header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/reset_acc_access_text"
+                android:text="Important Notice Read Carefully"
+                android:layout_margin="@dimen/ten_dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/seventeen_sp"
+                android:textColor="@color/colorWarning"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_below="@+id/reset_acc_access_text"
+                android:layout_width="match_parent"
+                android:background="@color/colorDevider"
+                android:layout_height="@dimen/one_dp"></View>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/reset_acc_details_layout"
+            android:layout_margin="@dimen/ten_dp"
+            android:layout_below="@+id/reset_acc_header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="@dimen/ten_dp"
+                android:layout_marginRight="@dimen/ten_dp"
+                android:textColor="@color/colorPrimaryText"
+                android:id="@+id/reset_acc_details_text"
+                android:layout_width="match_parent"
+                android:text="@string/reset_acc_warning_text"
+                android:layout_height="wrap_content" />
+            <!--Check box -->
+            <CheckBox
+                android:id="@+id/reset_acc_agree_chk"
+                android:layout_below="@+id/reset_acc_details_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:text="@string/agree_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/reset_acc_functional_layout"
+            android:layout_margin="@dimen/ten_dp"
+            android:layout_below="@+id/reset_acc_details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_margin="@dimen/ten_dp"
+                android:textColor="@color/colorPrimaryText"
+                android:id="@+id/reset_acc_account_edit"
+                android:inputType="textPassword"
+                android:hint="@string/reset_acc_password_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_margin="@dimen/ten_dp"
+                android:id="@+id/reset_acc_continue_button"
+                android:layout_below="@+id/reset_acc_account_edit"
+                android:text="@string/delete_text"
+                android:background="@color/colorWarning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="@dimen/thirty_dp"
+                android:id="@+id/reset_acc_support_text"
+                android:layout_marginRight="@dimen/ten_dp"
+                android:layout_marginLeft="@dimen/ten_dp"
+                android:text="@string/login_help"
+                android:layout_below="@+id/reset_acc_continue_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

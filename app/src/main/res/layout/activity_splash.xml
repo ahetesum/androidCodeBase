@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.connect.rh.presenter.common.start.splash.SplashActivity">
+
+
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:keepScreenOn="true"
+        android:text="@string/dummy_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/fifty_sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
